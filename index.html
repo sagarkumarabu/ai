@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TTS App</title>
+</head>
+<body>
+    <h1>Text-to-Speech App</h1>
+    <form method="POST">
+        <textarea name="text" rows="5" cols="50" placeholder="Type your text here"></textarea><br><br>
+        <button type="submit">Convert to Speech</button>
+    </form>
+
+    {% if audio_file %}
+        <h3>Listen to your audio:</h3>
+        <audio controls>
+            <source src="{{ audio_file }}" type="audio/mpeg">
+        </audio>
+        <br>
+        <a href="{{ url_for('download', filename=audio_file) }}">Download Audio</a>
+    {% endif %}
+</body>
+</html>
