@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saint John's School Abu Road</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    background:#0b2c5d;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:white;
+}
+
+.logo-text h1{
+    font-size:26px;
+}
+
+.logo-text p{
+    font-size:14px;
+    color:#d8d8d8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd700;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    height:90vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600') center/cover;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.hero-content h3{
+    font-size:34px;
+    color:#ffd700;
+    margin-bottom:30px;
+}
+
+.btn{
+    padding:14px 35px;
+    background:#ffd700;
+    color:#0b2c5d;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+/* ABOUT */
+
+.about{
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text h2{
+    font-size:40px;
+    color:#0b2c5d;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    line-height:1.8;
+    color:#444;
+}
+
+/* FEATURES */
+
+.features{
+    padding:80px 8%;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#0b2c5d;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#f8f9ff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    margin:20px 0;
+    color:#0b2c5d;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b2c5d;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:900px){
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero-content h2{
+        font-size:40px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+    <img src="logo.png" alt="School Logo">
+
+    <div class="logo-text">
+        <h1>Saint John's School</h1>
+        <p>Abu Road</p>
+    </div>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Academics</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+</header>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+    <h2>Welcome to Saint John's School</h2>
+
+    <p>Empowering Young Minds Through Knowledge & Values</p>
+
+    <h3>तमसो मा ज्योतिर्गमय</h3>
+
+    <a href="#" class="btn">Explore More</a>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1200" alt="School">
+
+<div class="about-text">
+
+    <h2>About Our School</h2>
+
+    <p>
+        Saint John's School Abu Road is dedicated to providing quality education,
+        character building, and holistic development for students.
+        Our mission is to guide students from darkness to light through education,
+        discipline, and excellence.
+    </p>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<div class="section-title">
+    <h2>Why Choose Us</h2>
+</div>
+
+<div class="feature-grid">
+
+    <div class="card">
+        <h3>Smart Classes</h3>
+        <p>Modern digital classrooms for interactive learning.</p>
+    </div>
+
+    <div class="card">
+        <h3>Sports Facilities</h3>
+        <p>Excellent indoor and outdoor sports infrastructure.</p>
+    </div>
+
+    <div class="card">
+        <h3>Qualified Teachers</h3>
+        <p>Experienced and dedicated faculty members.</p>
+    </div>
+
+    <div class="card">
+        <h3>Library</h3>
+        <p>Rich collection of books and learning resources.</p>
+    </div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Saint John's School Abu Road | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
