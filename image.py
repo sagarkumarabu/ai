@@ -9,7 +9,7 @@ pipe = StableDiffusionPipeline.from_pretrained(
 ).to("cpu")  # Use CPU instead of GPU
 
 #Prompt to generate image
-prompt = "a girl swimming in a pool, photorealistic"
+prompt = "a natural mopuntain , photorealistic"
 
 #Generate image
 image = pipe(prompt).images[0]
